@@ -1,19 +1,12 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, View } from 'react-native';
-import Catalogo from './Screens/Catalogo';
+import React from "react";
+import { StatusBar } from "expo-status-bar";
+import Navegacion from "./Navegacion/Navegacion";
+
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Catalogo />
+    <>
+      <Navegacion />
       <StatusBar style="auto" />
-    </View>
+    </>
   );
 }
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
